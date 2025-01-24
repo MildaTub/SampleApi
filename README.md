@@ -12,8 +12,8 @@ Docker Desktop installed on your machine.
 4. Once the containers are up and running, access the API Swagger documentation at: http://localhost:5000/swagger/index.html
 
 # Features
-CRUD Operations for Users
-Simple Exception Handling
-Simple validation for email addresses, assuming they are unique in the database.
-MongoDB is used as the primary database to showcase a modern stack.
-Unit tests are implemented only for the UserService.
+1. CRUD Operations for Users
+2. Simple Exception Handling
+3. Simple validation for email addresses, assuming they are unique in the database.
+4. MongoDB is used as the primary database to showcase a modern stack.
+5. Unit tests are implemented only for the UserService.
