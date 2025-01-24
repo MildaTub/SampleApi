@@ -7,7 +7,7 @@ SampleApi is a simple CRUD API for managing users.
 Docker Desktop installed on your machine.
 
 1. Clone the repository to your local machine.
-2. Navigate to the src directory.
+2. Navigate to the SampleApi directory.
 3. Run the following command in your terminal: docker-compose up --build
 4. Once the containers are up and running, access the API Swagger documentation at: http://localhost:5000/swagger/index.html
 
