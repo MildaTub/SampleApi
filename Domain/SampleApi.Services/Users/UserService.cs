@@ -48,6 +48,7 @@ public sealed class UserService : IUserService
         currentUser.LastName = userModel.LastName;
         currentUser.Email = userModel.Email;
         currentUser.PhoneNumber = userModel.PhoneNumber;
+        currentUser.CreatedAt = userModel.CreatedAt;
         
         User updatedUser = await _userRepository.Update(userModel);
         return updatedUser;
