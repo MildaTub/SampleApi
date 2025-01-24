@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>453487fb-2ac5-4cfc-bd1a-c627a6bb8b07</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SampleApi.csproj.Backup.tmp" />
+    <None Remove="SampleApi.http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="MongoDB.Driver" Version="3.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\SampleApi.Models\SampleApi.Models.csproj" />
+    <ProjectReference Include="..\..\Domain\SampleApi.Services\SampleApi.Services.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SampleApi.Mongo\SampleApi.Mongo.csproj" />
+    <ProjectReference Include="..\SampleApi.Contracts\SampleApi.Contracts.csproj" />
+    <ProjectReference Include="..\SampleApi.Shared\SampleApi.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ContainerPort Include="8081" />
+  </ItemGroup>
+
+</Project>
